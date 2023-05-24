@@ -1,0 +1,3 @@
+Terraform Setup:
+--- Provider defines who deploys the resources (AWS / Azure / GCP / Docker / etc)
+--- Run 'terraform init' on your 'main.tf' file
