@@ -1,3 +1,8 @@
+Overview of Files:
+--- main.tf
+--- terraform.tfstate
+--- terraform.tfstate.backup: maintains the last tfstate after 'terraform apply' or 'terraform destroy'
+
 Terraform Setup:
 --- Provider defines who deploys the resources (AWS / Azure / GCP / Docker / etc)
 --- Run 'terraform init' on your 'main.tf' file
@@ -5,3 +10,12 @@ Terraform Setup:
 Running Terraform:
 --- Run 'terraform plan'
 --- Run 'terraform apply'
+--- Run 'terraform show': shows terraform.tfstate file
+--- Run 'terraform state list': shows all resources deployed
+--- Run 'terraform console': opens terraform console
+
+Terraform State:
+--- Highest serial is the one that is considered when running terraform operations
+
+Terraform Output:
+--- Used to print terraform information after 'terraform apply' or from 'terraform output' (must be applied before visible in output)
