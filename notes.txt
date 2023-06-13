@@ -19,3 +19,9 @@ Terraform State:
 
 Terraform Output:
 --- Used to print terraform information after 'terraform apply' or from 'terraform output' (must be applied before visible in output)
+
+Terraform Import:
+--- Used to take a resource that already exists (for example a container) and map it to terraform code
+
+Terraform Refresh:
+--- Doesn't modify the resources, but does change the state. Not recommended workflow
