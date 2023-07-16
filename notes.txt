@@ -25,3 +25,35 @@ Terraform Import:
 
 Terraform Refresh:
 --- Doesn't modify the resources, but does change the state. Not recommended workflow
+--- Use this when things get out of sync
+
+Terraform Apply -Replace:
+--- Forces a resource to be destroyed and recreated on the apply execution
+
+Terraform Init:
+--- Get the provider files
+--- Store them in .terraform/providers (in current working directory by default)
+
+Terraform Backends:
+--- Define where the terraform state comes from
+--- Think of this is where the text file lives - s3, consul, locally, etc
+
+Terraform Workspace New <WORKSPACE>:
+--- Creates a new workspace
+
+Terraform Workspace Select <WORKSPACE>:
+--- Used to switch between workspaces
+
+Terraform Validate:
+--- Ensure that there are no syntactical errors with the terraform files
+
+Terraform Fmt:
+--- Enforce standard terraform style
+
+TF_LOG - logging level
+TF_VAR - prefix for environment variables
+
+Data blocks are used to retrieve external data (APIs/databases/etc) for use in terraform
+Terraform is declarative and immutable
+Terraform's parallelism configuration defaults to a value of 10
+Terraform.tfstate.d --> Workspace --> terraform.tfstate
