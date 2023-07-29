@@ -57,3 +57,18 @@ Data blocks are used to retrieve external data (APIs/databases/etc) for use in t
 Terraform is declarative and immutable
 Terraform's parallelism configuration defaults to a value of 10
 Terraform.tfstate.d --> Workspace --> terraform.tfstate
+
+Defining Variables:
+'variables.tf' define the metadata of the variable:
+  variable "storage_account_name" {
+   type        = string
+   description = "Storage account name"
+    default     = ""
+  }
+The assignment of the variables can either be done in 'terraform.tfvars' or in 'main.tf'
+  storage_account_name    = "geralexgrsgv2"
+  module "storage_account_test" {
+    storage_account_name    = "geralexgrsgv2"
+  }
+The variable can be accessed by:
+  var.storage_account_name
