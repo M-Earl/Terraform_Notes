@@ -72,3 +72,7 @@ The assignment of the variables can either be done in 'terraform.tfvars' or in '
   }
 The variable can be accessed by:
   var.storage_account_name
+
+Terraform Enterprise
+--- Terraform hosted distribution of Terraform Cloud. 
+--- Sentinel can be used here to enforce requirements in the terraform code
