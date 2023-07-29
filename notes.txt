@@ -30,6 +30,12 @@ Terraform Refresh:
 Terraform Apply -Replace:
 --- Forces a resource to be destroyed and recreated on the apply execution
 
+Terraform Get:
+--- Used to download and update modules
+
+Terraform Apply -Refresh-Only
+--- Reconciles state between terraform and what is actually deployed
+
 Terraform Init:
 --- Get the provider files
 --- Store them in .terraform/providers (in current working directory by default)
